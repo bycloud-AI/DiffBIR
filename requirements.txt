@@ -12,3 +12,4 @@ gradio
 chardet
 transformers
 facexlib
+einops
