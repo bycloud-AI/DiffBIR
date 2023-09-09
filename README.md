@@ -31,6 +31,7 @@ The tutorial ends here. The following are a copy of the original repository for 
 
 <td><img src="https://i.imgur.com/dAqoN7j.png"></td>
 
+---
 
 <p align="center">
     <img src="assets/logo.png" width="400">
