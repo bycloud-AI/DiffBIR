@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "run": [
     {
@@ -7,4 +8,15 @@
     }
   }
   ]
+=======
+{
+  "run": [
+    {
+    "method": "shell.run",
+    "params": {
+      "message": "call activate diffbir && python gradio_diffbir.py --ckpt weights/general_full_v1.ckpt --config configs/model/cldm.yaml --reload_swinir --swinir_ckpt weights/general_swinir_v1.ckpt"
+    }
+  }
+  ]
+>>>>>>> 278360012f343df6afebdf30e23e9b64905354dd
 }
