@@ -65,7 +65,7 @@
       {
         "method": "shell.enter",
         "params": {
-          "message": "curl -L -o weights/general_swinir_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/general_full_v1.ckpt",
+          "message": "curl -L -o weights/general_full_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/general_full_v1.ckpt",
           "on": [{ "event": null, "return": true }]
         }
       }
@@ -73,7 +73,7 @@
       {
         "method": "shell.enter",
         "params": {
-          "message": "curl -L -o weights/general_swinir_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/face_swinir_v1.ckpt",
+          "message": "curl -L -o weights/face_swinir_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/face_swinir_v1.ckpt",
           "on": [{ "event": null, "return": true }]
         }
       }
@@ -81,7 +81,7 @@
       {
         "method": "shell.enter",
         "params": {
-          "message": "curl -L -o weights/general_swinir_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/face_full_v1.ckpt",
+          "message": "curl -L -o weights/face_full_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/face_full_v1.ckpt",
           "on": [{ "event": null, "return": true }]
         }
       },
