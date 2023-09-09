@@ -12,3 +12,4 @@ chardet
 transformers
 facexlib
 einops
+xformers

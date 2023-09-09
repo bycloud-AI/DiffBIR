@@ -41,19 +41,43 @@
     {
       "method": "shell.enter",
       "params": {
-        "message": "conda install xformers==0.0.16 -c xformers -y",
-      
-      "on": [{ "event": null, "return": true }]
-    }
-    },
-    {
-      "method": "shell.enter",
-      "params": {
         "message": "pip install -r requirements.txt",
         "on": [{ "event": null, "return": true }]
       }
     }
-      ,
+    ,
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "git clone https://github.com/openai/triton.git",
+        "on": [{ "event": null, "return": true }]
+      }
+    }
+    ,
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "cd triton/python",
+        "on": [{ "event": null, "return": true }]
+      }
+    }
+    ,
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "pip install -e .",
+        "on": [{ "event": null, "return": true }]
+      }
+    }
+    ,
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "cd ../..",
+        "on": [{ "event": null, "return": true }]
+      }
+    }
+    ,
       {
         "method": "shell.enter",
         "params": {
