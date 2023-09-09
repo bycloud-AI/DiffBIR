@@ -1,0 +1,10 @@
+{
+  "run": [
+    {
+    "method": "shell.run",
+    "params": {
+      "message": "start notepad configs/model/cldm.yaml"
+    }
+  }
+  ]
+}

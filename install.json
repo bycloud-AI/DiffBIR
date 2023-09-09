@@ -1,0 +1,98 @@
+{
+  "run": [
+    {
+      "method": "input",
+      "params": {
+        "title": "Starting...",
+        "description": "The installation of the dependencies will start now..."
+      }
+    },
+    {
+      "method": "shell.start",
+      "params": {
+        "path": "",
+        "env": {
+          "HF_HOME": "../"
+        }
+      }
+    },
+    {
+      "method": "shell.enter",
+      "params": {
+      "message": "conda create -n diffbir python=3.9 -y",
+      "on": [{ "event": null, "return": true }]
+      }
+    },
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "call activate diffbir",
+        "on": [{ "event": null, "return": true }]
+      }
+    },
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y",
+      
+      "on": [{ "event": null, "return": true }]
+    }
+    },
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "conda install xformers==0.0.16 -c xformers -y",
+      
+      "on": [{ "event": null, "return": true }]
+    }
+    },
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "pip install -r requirements.txt",
+        "on": [{ "event": null, "return": true }]
+      }
+    }
+      ,
+      {
+        "method": "shell.enter",
+        "params": {
+          "message": "curl -L -o ../weights/general_swinir_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/general_swinir_v1.ckpt",
+          "on": [{ "event": null, "return": true }]
+        }
+      }
+      ,
+      {
+        "method": "shell.enter",
+        "params": {
+          "message": "curl -L -o ../weights/general_swinir_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/general_full_v1.ckpt",
+          "on": [{ "event": null, "return": true }]
+        }
+      }
+      ,
+      {
+        "method": "shell.enter",
+        "params": {
+          "message": "curl -L -o ../weights/general_swinir_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/face_swinir_v1.ckpt",
+          "on": [{ "event": null, "return": true }]
+        }
+      }
+      ,
+      {
+        "method": "shell.enter",
+        "params": {
+          "message": "curl -L -o ../weights/general_swinir_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/face_full_v1.ckpt",
+          "on": [{ "event": null, "return": true }]
+        }
+      },
+          
+      {
+      "method": "input",
+      "params": {
+        "title": "Install Success",
+        "description": "Go back to the dashboard and launch the app!"
+      }
+    }
+
+  ]
+}
