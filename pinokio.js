@@ -1,6 +1,6 @@
 module.exports = {
-  title: "Tokenflow",
-      description: "TokenFlow: Consistent Diffusion Features for Consistent Video Editing",
+  title: "DiffBIR",
+      description: "DiffBIR: Towards Blind Image Restoration with Generative Diffusion Prior",
       icon: "icon.png",
   menu: [{
     html: "<i class='fa-solid fa-plug'></i> Install",
