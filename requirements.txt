@@ -3,7 +3,6 @@ einops
 open-clip-torch
 omegaconf
 torchmetrics==0.6.0
-triton
 opencv-python-headless
 scipy
 matplotlib
