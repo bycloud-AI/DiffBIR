@@ -1,3 +1,38 @@
+# Windows Installation Tutorial For DiffBIR
+This is a Windows tutorial with NVIDIA GPU for running DiffBIR in your command line, but made convenenient ✨
+
+| **Total file size** | **__GB** |
+|---|---|
+|**VRAM** | **__GB**|
+
+You can watch the YouTube tutorial [here]()
+
+### step 1: setting up the environment
+
+Install [Pinokio](https://pinokio.computer/), we wrote a pinokio file where you **just need 1 click to install all of the dependencies**. 
+
+Then open up Pinokio, copy the link of this repository, go to the top right button "Discover", paste the link at the side that says "enter git URL", and press download.
+
+Press back and you can find "DiffBIR" in your Pinokio list. Press **Install** to download all the dependencies.
+
+
+
+### step 2
+
+## **Todo**
+```
+
+```
+
+
+## This tutorial is made by the team at bycloud AI, feel free to support our endevour in making installation tutorials here! ![Static Badge](https://img.shields.io/badge/Patreon-%23333?logo=Patreon&link=https%3A%2F%2Fwww.patreon.com%2Fbycloud_AI) 
+
+The tutorial ends here. The following are a copy of the original repository for references.
+
+<td><img src="https://i.imgur.com/dAqoN7j.png"></td>
+
+---
+
 <p align="center">
     <img src="assets/logo.png" width="400">
 </p>
