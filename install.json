@@ -19,7 +19,7 @@
     {
       "method": "shell.enter",
       "params": {
-      "message": "conda create -n diffbir python=3.9 -y",
+      "message": "conda create -n diffbir python=3.10 -y",
       "on": [{ "event": null, "return": true }]
       }
     },
@@ -41,6 +41,22 @@
     {
       "method": "shell.enter",
       "params": {
+        "message": "pip install triton-2.0.0-cp310-cp310-win_amd64.whl",
+      
+      "on": [{ "event": null, "return": true }]
+    }
+    },
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "pip install xformers",
+      
+      "on": [{ "event": null, "return": true }]
+    }
+    },
+    {
+      "method": "shell.enter",
+      "params": {
         "message": "pip install -r requirements.txt",
         "on": [{ "event": null, "return": true }]
       }
@@ -49,7 +65,7 @@
     {
       "method": "shell.enter",
       "params": {
-        "message": "git clone https://github.com/openai/triton.git",
+        "message": "curl -L -o weights/general_swinir_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/general_swinir_v1.ckpt",
         "on": [{ "event": null, "return": true }]
       }
     }
@@ -57,7 +73,7 @@
     {
       "method": "shell.enter",
       "params": {
-        "message": "cd triton/python",
+        "message": "curl -L -o weights/general_full_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/general_full_v1.ckpt",
         "on": [{ "event": null, "return": true }]
       }
     }
@@ -65,7 +81,7 @@
     {
       "method": "shell.enter",
       "params": {
-        "message": "pip install -e .",
+        "message": "curl -L -o weights/face_swinir_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/face_swinir_v1.ckpt",
         "on": [{ "event": null, "return": true }]
       }
     }
@@ -73,50 +89,18 @@
     {
       "method": "shell.enter",
       "params": {
-        "message": "cd ../..",
+        "message": "curl -L -o weights/face_full_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/face_full_v1.ckpt",
         "on": [{ "event": null, "return": true }]
       }
+    },
+        
+    {
+    "method": "input",
+    "params": {
+      "title": "Install Success",
+      "description": "Go back to the dashboard and launch the app!"
     }
-    ,
-      {
-        "method": "shell.enter",
-        "params": {
-          "message": "curl -L -o weights/general_swinir_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/general_swinir_v1.ckpt",
-          "on": [{ "event": null, "return": true }]
-        }
-      }
-      ,
-      {
-        "method": "shell.enter",
-        "params": {
-          "message": "curl -L -o weights/general_full_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/general_full_v1.ckpt",
-          "on": [{ "event": null, "return": true }]
-        }
-      }
-      ,
-      {
-        "method": "shell.enter",
-        "params": {
-          "message": "curl -L -o weights/face_swinir_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/face_swinir_v1.ckpt",
-          "on": [{ "event": null, "return": true }]
-        }
-      }
-      ,
-      {
-        "method": "shell.enter",
-        "params": {
-          "message": "curl -L -o weights/face_full_v1.ckpt https://huggingface.co/lxq007/DiffBIR/resolve/main/face_full_v1.ckpt",
-          "on": [{ "event": null, "return": true }]
-        }
-      },
-          
-      {
-      "method": "input",
-      "params": {
-        "title": "Install Success",
-        "description": "Go back to the dashboard and launch the app!"
-      }
-    }
+  }
 
   ]
 }
