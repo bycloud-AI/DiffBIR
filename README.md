@@ -25,9 +25,16 @@ Press back and you can find "DiffBIR" in your Pinokio list. Press **Install** to
 ```
 
 
-## This tutorial is made by the team at bycloud AI, feel free to support our endevour in making installation tutorials here! ![Static Badge](https://img.shields.io/badge/Patreon-%23333?logo=Patreon&link=https%3A%2F%2Fwww.patreon.com%2Fbycloud_AI) 
+## The tutorial ends here. 
 
-The tutorial ends here. The following are a copy of the original repository for references.
+The following are a copy of the original repository for references.
+
+This tutorial is made by the team at bycloud AI, feel free to support our endevour in making installation tutorials here! 
+
+
+
+[![Patreon](https://img.shields.io/badge/Patreon-white?style=for-the-badge&logo=Patreon&link=https://patreon.com/bycloud_ai)](https://patreon.com/bycloud_ai)
+ [![Twitter](https://img.shields.io/badge/Twitter-white?style=for-the-badge&logo=twitter&link=https://twitter.com/bycloud_ai)](https://twitter.com/bycloud_ai) [![GitHub](https://img.shields.io/badge/GitHub-white?style=for-the-badge&logo=GitHub&logoColor=black&link=https://github.com/bycloud-ai)](https://github.com/bycloud-ai)
 
 <td><img src="https://i.imgur.com/dAqoN7j.png"></td>
 
