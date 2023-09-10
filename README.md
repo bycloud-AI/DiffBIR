@@ -1,28 +1,49 @@
 # Windows Installation Tutorial For DiffBIR
 This is a Windows tutorial with NVIDIA GPU for running DiffBIR in your command line, but made convenenient ✨
 
-| **Total file size** | **__GB** |
+| **Total file size** | **20GB** |
 |---|---|
-|**VRAM** | **__GB**|
+|**VRAM**|**>8GB**|
+
 
 You can watch the YouTube tutorial [here]()
 
-### step 1: setting up the environment
+## step 1: setting up the environment
 
 Install [Pinokio](https://pinokio.computer/), we wrote a pinokio file where you **just need 1 click to install all of the dependencies**. 
 
-Then open up Pinokio, copy the link of this repository, go to the top right button "Discover", paste the link at the side that says "enter git URL", and press download.
+Then open up Pinokio, go to the top right button "Discover" 
 
-Press back and you can find "DiffBIR" in your Pinokio list. Press **Install** to download all the dependencies.
+![Screenshot 2023-09-10 132723](https://github.com/bycloud-AI/DiffBIR-Windows/assets/29135514/57904874-08fa-482d-ad61-cbe8e60e64f7)
+
+Copy the link of this repository, paste the link at the side that says "enter git URL"
+
+![Screenshot 2023-09-10 132638](https://github.com/bycloud-AI/DiffBIR-Windows/assets/29135514/486e9ef3-6ad4-435f-9605-cd5dcf48d7b9)
+
+And press download
+
+![Screenshot 2023-09-10 132802](https://github.com/bycloud-AI/DiffBIR-Windows/assets/29135514/962dc662-f37d-4334-adcc-2ff2ab13c015)
+
+You can find "DiffBIR.git" in your Pinokio list (if you didn't change the save name). 
+
+Press **Install** to download all the dependencies in a conda env
+
+![Screenshot 2023-09-10 133023](https://github.com/bycloud-AI/DiffBIR-Windows/assets/29135514/69621a37-892b-4814-9020-12745240b56e)
 
 
 
-### step 2
+## step 2: Launching the webUI
 
-## **Todo**
+Press the "start" button on Pinokio
+
+![Screenshot 2023-09-10 134907](https://github.com/bycloud-AI/DiffBIR-Windows/assets/29135514/6cc2a0ad-691b-4765-9db6-251a13625762)
+
+enter the following command in the CMD
+```
+python gradio_diffbir.py --ckpt weights/general_full_v1.ckpt --config configs/model/cldm.yaml --reload_swinir --swinir_ckpt weights/general_swinir_v1.ckpt
 ```
 
-```
+It'll launch a Gradio webUI and you can access it with `http://localhost:7860` after it starts running.
 
 
 ## The tutorial ends here. 
