@@ -169,4 +169,4 @@ with block:
     ]
     run_button.click(fn=process, inputs=inputs, outputs=[result_gallery])
 
-block.launch(server_name='0.0.0.0')
+block.launch(server_name='localhost')
