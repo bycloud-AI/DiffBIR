@@ -6,7 +6,7 @@ This is a Windows tutorial with NVIDIA GPU for running DiffBIR in your command l
 |**VRAM**|**>8GB**|
 
 
-You can watch the YouTube tutorial [here]()
+You can watch the YouTube tutorial [here](https://youtu.be/rGnrpxWjBOg)
 
 ## step 1: setting up the environment
 
